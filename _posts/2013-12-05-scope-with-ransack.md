@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Combining Scopes & Ransack thanks to Virtus & Siphon"
-date:   2014-06-02 13:22:33
 categories: ruby ransack siphon
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Post has_many walks through associations"
+title:  "Post has_one walk through associations"
 date:   2014-06-02 13:22:33
 categories: ruby activerecord
 ---
@@ -10,7 +10,7 @@ Associations is, I believe, what really makes RoR shine. When I started using th
 ## But first the Main Characters
 Many times before diving in the code, I heard of macros, reflections, proxies and other weird animals with a vague idea of their roles, but : where they lived... what they'd do... how they'd interact was a complete mystery. So let me present them to you first.
 
-* The keyword __macro__ points to the type of association we're dealing with : `belongs_to`, `has_many`, `has_one`, `has_many through`, `has_and_belongs_to_many ... Why the term macro (in greeek BIG) ? Because calling it inside the class body will unfold a truck load of methods & behaviours.
+* The keyword __macro__ points to the type of association we're dealing with : `belongs_to`, `has_many`, `has_one`, `has_many through`, `has_and_belongs_to_many` ... Why the term macro (in greeek BIG) ? Because calling it inside the class body will unfold a truck load of methods & behaviours.
 * The keyword __reflection__ was more opaque to me (like a tinted mirror I guess). And thinking about reflection would often throw me in an infinite loop.... However I am able to say now a Reflection is a class that holds all the informations a Model needs to know about its association. In particular, the reflection will be helpfull for the model to create the association_proxy.
 * Which brings us the notion of __Proxy__. As you may know already a Proxy is a bit like your lawyer or spokesman. It'l stand in front of a heard of hungry journalist & IP requests while you're on holidays in Paris sucking up a coffeescript at Café de Flore. When you call 'articles' on the the Author model and ask for interesting insights, the author isn't going to pull out all his work for you, he'll keep enjoying his caffeine spleen while sending his editor proxy to pull out some bait to keep you away from a life of lust and total lack of inspiration. I'll illustrate that later
 
@@ -24,7 +24,7 @@ end
 
 ...
 
-## Ready to Dive in? YourAttention belongs_to me
+## Ready to Dive in? Your Attention belongs_to me
 
 Since all the magic comes from the simple call of a class method inside your Model's guts, first things first, lets find where these are defined. A quick search shows us they're, _surprisingly_, in the top Association class.
 
