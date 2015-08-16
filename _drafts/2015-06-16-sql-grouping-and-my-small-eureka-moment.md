@@ -5,14 +5,20 @@ date:   2014-06-02 13:22:33
 categories: ruby activerecord
 ---
 
-To determine if a picture is published or not, the **Picture table** has a column named _published_ : 
+Not all ruby developpers are sql experts although if you do anything involving persistent data you must have some notions sql principles. Recently I came 
+I have a small sql problem for you. Here it goes...
 
-* if the value is 0 the image's unpublished. 
-* if it's 1 the image will appear on the public section. 
+Consider your typical has_and_many relation between People and Pictures :
 
-Easy peasy...
+~~~ ruby
+class Person; has_many :pictures, through: person_pictures
+~~~ 
 
-Now I want to find out **people that _don't have any  pictures published_.**
+And the pictures table has a published column (1 for published, 0 for unpublished). 
+
+**Question** : how do find out people who don't have _any_ pictures published with sql only ?
+
+You might think it's obvious like I did when starting... But please give it some thought
 
 ### 1st Try : Filtering
 So without thinking too much I start joining the People table with the Picture table  : 
@@ -38,7 +44,10 @@ Person.join(:pictures).where("pictures.published = 0")
 Great that was fun! 
 
 But if you look closely at the results there's a twist...
-The problem with this, is it will give me People that have unpublished pictures. Sure but that doesn't mean they can't have published pictures as well. For example all Einstein's pictures were published, so he won't appear. But Goddard who has many of both (pub & unpub) _will_ appear... I got rid of Einstein but Goddard is still sticking around despite Kono frowning at her.
+
+The problem is : it will give me People with unpublished pictures, sure _but that doesn't mean they can't have published pictures as well_. For example all Einstein's pictures were published, so he won't appear. But Paulette Goddard who has many of both (published _and_ unpublished) _will_ appear... I got rid of Einstein but Goddard is still sticking around despite Kono frowning at her.
+
+How do you solve that ?
 
 ### 2nd Try : Grouping
 So the next thing I do is group the results. 
@@ -241,7 +250,7 @@ and I sum up every published status for each person and the result is 0 that mea
 Person.joins(:pictures).group("people.id, pictures.published").having("sum(published) = 0")
 ```
 
-A posteriori so obvious yet... I'm sure thousands... millions of people went through this kind of process (programmers, physicists, politicians, fiscalists, magicians...) before reinventing the wheel. But it is so gratifying when you eat the one you fished yourself.
+A posteriori so obvious yet... I'm sure thousands of people went through this kind of process (programmers, physicists, politicians, fiscalists, magicians...) before reinventing the wheel. But it is so gratifying when you eat the one you fished yourself.
 
 What I find mesmerizing is that once you know the solution and then (re)read the first statement of this text... it's already there.
 
