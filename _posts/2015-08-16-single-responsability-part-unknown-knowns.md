@@ -9,13 +9,13 @@ We've all heard of the Single Responsibility Principle which stands on top of th
 
 So it's all well'n good but agreeing on the benefits of SRP isn't enough and cries for another question that is : 
 
-> where (or when) do you draw the line of an object's responsibility ?
+> where (or when) do you draw the line of an object responsibility ?
 
-Some "responsabilities" are obvious especially when they're direct reflections of the "real world". A User and a Book are clearly seperated because there is, at the expense of sounding pedantic, an 'Ontological' differanciation between the 2. A book is not a user and vice versa because well... our brain is wired to not understand the opposite.
+Some "responsibilities" are obvious especially when they're direct reflections of the "real world". A User and a Book are clearly seperated because there is, at the expense of sounding pedantic, an 'Ontological' differentiation between the two. A book is not a user and vice versa because well... our brain is wired to not understand the opposite.
 
 But here's a more subtle one. Is A User a Person ? At first you're tempted to answer yes and your gut feeling doesn't even give it a second thought. YES a user is someone behind his computer or mobile phone intertacting with your application, so you swiftly move on and give it attributes like first_name, last_name, date_of_birth etc. 
 
-Is a User a Contact ? Filled with confidence from your previous Yes you through yourself with contempt in this positive Assertion fest and give another resounding "Yes" to that question : Obviously a user has an email to authenticate so yeah its a contact, obviously... Duh 
+Is a User a Contact ? Filled with confidence from your previous Yes you through yourself with contempt in this positive Assertion feast and give another resounding "Yes" to that question : obviously a user has an email to authenticate so yeah its a contact, obviously... Duh 
 
 And here the God syndrome starts slowly creeping in...
 
