@@ -31,9 +31,9 @@ Zizek latter added to this category the _unknown knowns_. In this case the _unkn
 
 Well this is exactely what happens with the User god object : you just couldn't help assuming it's a human being with a face, name and sex. But from the Application standpoint it might as well be a bot, an alien or an octopuss, it doesn't give a... care less. 
 
-Same with the Contact. You can be drawn to think the User is a contact since it has an email and you can therefore make contact. But remember the login field used to be username or login and it could be something else, why not a picture file with your face on it. And while we're at it, why limit your contcats to only the authenitcated users ? Why couldn't you have a whole bunch of contacts in your database for newsletters for exemple ?
+Same with the Contact. You can be drawn to think the User is a contact since it has an email and you can therefore make contact. But remember the login field used to be 'username' or 'login'. Or it could be something else, why not a picture file with your face on it. And while we're at it, why limit your contacts to the authenticated users ? Why couldn't you have a whole bunch of contacts in your database for newsletters for exemple ?
 
-Again : Person, Contact, Address are all concepts that tresspass the responsability of the sole User. A User is just a couple of matching attributes wich permit outside interaction with other parts of the App. And that's it. So if you're eager to give your User an avatar, a name and body parts to bring it closer to your Human presumptions, remember the _unknown knowns_
+Again : Person, Contact, Address are all concepts that tresspass the responsability of the sole User. A User is just a couple of matching attributes which permit outside interaction with other parts of the App. And that's it. So if you're eager to give your User an avatar, a name and body parts... remember your _unknown knowns_ !
 
 The next part of this post will tackle with SRP in the MVC. And no it's not about Services...
 
