@@ -15,21 +15,21 @@ Some "responsibilities" are obvious especially when they're direct reflections o
 
 But here's a more subtle one. Is A User a Person ? At first you're tempted to answer yes and your gut feeling doesn't even give it a second thought. YES a user is someone behind his computer or mobile phone intertacting with your application, so you swiftly move on and give it attributes like first_name, last_name, date_of_birth etc. 
 
-Is a User a Contact ? Filled with confidence from your previous Yes you through yourself with contempt in this positive Assertion feast and give another resounding "Yes" to that question : obviously a user has an email to authenticate so yeah its a contact, obviously... Duh 
+Is a User a Contact ? Filled with confidence from your previous Yes you through yourself with contempt in this positive Assertion feast and give another resounding "Yes" to that question : obviously a user has an email to authenticate so yeah it's a contact, obviously... Duh 
 
-And here the God syndrome starts slowly creeping in...
+And here the God syndrome starts  creeping in...
 
-The problem is you're still relying on ontological differanciation given by your human experience which isn't enough anymore. What you should do instead is think from the standpoint of your Application. To do that you must shift you thoughts from Human Oriented thinking to Application Oriented Thinking. Yes take the blue the pill.
+The problem is you're still relying on the 'ontological differentiation' molded by your human experience, but which isn't enough anymore. What you should do instead is think from the standpoint of your Application. To do that you must shift you thoughts from Human Oriented thinking to Application Oriented Thinking. Yes take the blue the pill.
 
 So what's a user, what do we know about the user. Do you remember the famous [statement of Rumsfeld](https://en.wikipedia.org/wiki/There_are_known_knowns) about arms of mass destruction. He said you have 3 sorts of knowns :
 
-* the known knwons (e.g : position of all Irak's AA radars...)
-* the knwon unknowns (e.g. the precise number of tanks. 10 or 20 thousand...)
+* the known knowns (e.g : position of all Irak's AA radars...)
+* the known unknowns (e.g. the precise number of tanks. 10 or 20 thousand...)
 * AND the unknown unknowns (whouhha they're maybe secretley working whith aliens...)
 
-Zizek latter added to this category the _unknown knowns_. In this case the _unknown knowns_ are all the presumptions & perception biases that inconsciously drove American Leaders to take bad decisions...
+Zizek latter added to this category the _unknown knowns_. In this case the _unknown knowns_ are all the presumptions & perception biases that inconsciously drove American leaders to take bad decisions...
 
-Well this is exactely what happens with the User god object : you just couldn't help assuming it's a human beeing with a face, name and sex. But from the Application standpoint it might as well be a bot, an alien or an octopuss, it doesn't give a... care less. 
+Well this is exactely what happens with the User god object : you just couldn't help assuming it's a human being with a face, name and sex. But from the Application standpoint it might as well be a bot, an alien or an octopuss, it doesn't give a... care less. 
 
 Same with the Contact. You can be drawn to think the User is a contact since it has an email and you can therefore make contact. But remember the login field used to be username or login and it could be something else, why not a picture file with your face on it. And while we're at it, why limit your contcats to only the authenitcated users ? Why couldn't you have a whole bunch of contacts in your database for newsletters for exemple ?
 
