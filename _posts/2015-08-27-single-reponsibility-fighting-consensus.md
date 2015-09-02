@@ -2,6 +2,7 @@
 layout: post
 title:  "Single Responsability Part II: Fighting the Consensus"
 categories: ruby omniauth devise
+comments: true
 ---
 
 This post is rather coincidental since it wasn't planned when I started my SRP series. But while I was [illustrating SRP][last] with the canonical `User` God object, I was also fiddling with a recent app, fine tuning some interactions with my Users.  And you guessed right,  I was using  [Devise][dev] by José Valim - who's a sort of God himself BTW, especially since he drank a strange [Elixir][eli].
@@ -155,5 +156,5 @@ PS : one could argue a user is almost/theoretically not necessary in this scheme
 [tut]: http://railscasts.com/episodes/304-omniauth-identity
 [omid]: https://github.com/intridea/omniauth-identity
 [diy]: http://confreaks.tv/videos/nickelcityruby2013-actually-invented-here-a-paean-to-reinventing-the-wheel
-[imagebank]: http://photo.charliechaplin.com/
+[imagebank]: http://photo.charliechaplin.com/people
 

@@ -8,7 +8,7 @@ comments: true
 
 This is a follow-up to the previous article I wrote about [mixing concerns of Identity and Authentication][1]. I encourage you to read it, however I'll attempt to put it in a nutshell : 
 
-*the User Model is, fundamentally, only here to give scope and integrity to various parts of the data in an application based on user interaction and ownership. Authentication in the other hand is the process which attempts to tie the `user_id` you're providing to some person you claim to be. Yet all popular authentication gems (Devise, Sorcery, Authlogic...) mix both.*
+*The User Model's fundamental purpose is to give scope and integrity to various parts of the data in an application based on user interaction and ownership. Authentication on the other hand is the process which attempts to tie the `user_id` you provide to some person you claim to be. Yet all popular authentication gems (Devise, Sorcery, Authlogic...) mix both.*
 
 A strong clue for this separation of concern is authentication's only _done once_ (when you signin) while data integrity is ensured the _rest of the time_ (`current_user.orders` etc.)
 
